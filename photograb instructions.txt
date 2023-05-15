@@ -1,0 +1,9 @@
+To run the program, double click the python file 'photograb'
+
+For the program to run correctly, you must have your photograb_config.json with the correct data. There are two pieces of data:
+
+store_domain: the url for your store. when you log into lightspeed, your store url will be <store_domain>.vendhq.com where <store_domain> is that part of the url.
+
+bearer_token: this is a token used for communicating with the API that is generated in Settings->Personal Tokens. This value should be kept secret otherwise anyone can have access to your store via the API.
+
+Once the program is running, it will ask for an inventory SKU. It will pull that specific item and download any images related to that item at their upload quality, putting them in a folder named after the SKU.
